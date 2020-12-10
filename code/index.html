@@ -7,4 +7,41 @@ title: Code Example
 
 <p>Here's an example of my coding! It's only a FizzBuzz program, so it's not much, but it shows a bit of my experience with coding.</p>
 
-&lt;
+<pre>
+  <code>
+    &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;title&gt;Fizz Buzz&lt;&sol;title&gt;
+&lt;script&gt;
+
+function fizzbuzz() {
+	var display = document.getElementById('display');
+	var displayHTML = "";
+	for (i = 1; i &lt; 101; i++) 
+		if (Number.isInteger(i/3) && Number.isInteger(i/5)) {
+			displayHTML += "&lt;p&gt;" + "FizzBuzz" + "&lt;&sol;p&gt;";
+		} else if (Number.isInteger(i/3)) {
+			displayHTML += "&lt;p&gt;" + "Fizz" + "&lt;&sol;p&gt;";
+		} else if (Number.isInteger(i/5)) {
+			displayHTML += "&lt;p&gt;" + "Buzz" + "&lt;&sol;p&gt;";
+		} else {
+		displayHTML += "&lt;p&gt;" + i + "&lt;&sol;p&gt;";
+	}
+	display.innerHTML = displayHTML
+}
+
+&lt;&sol;script&gt;
+
+&lt;&sol;head&gt;
+
+&lt;body onload="fizzbuzz()"&gt;
+&lt;div id="display"&gt;
+
+&lt;&sol;div&gt;
+&lt;&sol;body&gt;
+
+&lt;&sol;html&gt;
+  </code>
+</pre>
